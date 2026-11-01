@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'Alertas do temporizador de descanso, mesmo com o openGym fechado.',
   'Workout day reminder': 'Lembrete de dia de treino',
   'Reminder time': 'Hora do lembrete',
+  'Early notice (minutes)': 'Aviso antecipado (minutos)',
   "Only sent on days you have a routine planned and haven't logged a workout yet.": 'Enviado apenas nos dias com rotina planeada e sem treino registado.',
   'Timezone: {0} (auto-detected, updates if you travel).': 'Fuso horário: {0} (detetado automaticamente, atualiza-se se viajares).',
   'Send test notification': 'Enviar notificação de teste',

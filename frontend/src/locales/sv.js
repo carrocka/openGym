@@ -490,6 +490,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'Påminnelser från vilotimern, även när openGym är stängd.',
   'Workout day reminder': 'Påminnelse på träningsdagar',
   'Reminder time': 'Tid för påminnelse',
+  'Early notice (minutes)': 'Förhandsavisering (minuter)',
   'Only sent on days you have a routine planned and haven\'t logged a workout yet.': 'Skickas bara de dagar du har en rutin planerad och inte loggat något pass än.',
   'Timezone: {0} (auto-detected, updates if you travel).': 'Tidszon: {0} (känns av automatiskt och uppdateras när du reser).',
   'Send test notification': 'Skicka testnotis',

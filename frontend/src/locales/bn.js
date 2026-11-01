@@ -504,6 +504,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'রেস্ট টাইমারের সতর্কতা, openGym বন্ধ থাকলেও।',
   'Workout day reminder': 'ওয়ার্কআউটের দিনের রিমাইন্ডার',
   'Reminder time': 'রিমাইন্ডারের সময়',
+  'Early notice (minutes)': 'আগাম বিজ্ঞপ্তি (মিনিট)',
   'Only sent on days you have a routine planned and haven\'t logged a workout yet.': 'শুধু সেই দিনগুলোতে পাঠানো হয়, যেদিন আপনার রুটিন প্ল্যান করা আছে এবং এখনও কোনো ওয়ার্কআউট লগ করেননি।',
   'Timezone: {0} (auto-detected, updates if you travel).': 'টাইমজোন: {0} (স্বয়ংক্রিয়ভাবে শনাক্ত, ভ্রমণ করলে আপডেট হয়)।',
   'Send test notification': 'টেস্ট নোটিফিকেশন পাঠান',

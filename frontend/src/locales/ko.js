@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'openGym이 닫혀 있어도 휴식 타이머 알림을 받아요.',
   'Workout day reminder': '운동일 리마인더',
   'Reminder time': '리마인더 시간',
+  'Early notice (minutes)': '미리 알림 (분)',
   "Only sent on days you have a routine planned and haven't logged a workout yet.": '루틴이 예정되어 있고 아직 운동을 기록하지 않은 날에만 전송됩니다.',
   'Timezone: {0} (auto-detected, updates if you travel).': '시간대: {0} (자동 감지, 여행 시 업데이트됨).',
   'Send test notification': '테스트 알림 보내기',

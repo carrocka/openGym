@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'แจ้งเตือนหมดเวลาพัก แม้ปิดแอป openGym อยู่',
   'Workout day reminder': 'เตือนวันออกกำลังกาย',
   'Reminder time': 'เวลาแจ้งเตือน',
+  'Early notice (minutes)': 'แจ้งเตือนล่วงหน้า (นาที)',
   "Only sent on days you have a routine planned and haven't logged a workout yet.": 'จะแจ้งเตือนเฉพาะวันที่มีแผนไว้และยังไม่ได้บันทึกการออกกำลังกาย',
   'Timezone: {0} (auto-detected, updates if you travel).': 'เขตเวลา: {0} (ตรวจจับอัตโนมัติ อัปเดตเมื่อคุณเดินทาง)',
   'Send test notification': 'ส่งการแจ้งเตือนทดสอบ',

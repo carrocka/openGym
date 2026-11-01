@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'openGym kapalıyken bile dinlenme sayacı uyarıları.',
   'Workout day reminder': 'Antrenman günü hatırlatıcısı',
   'Reminder time': 'Hatırlatma saati',
+  'Early notice (minutes)': 'Önceden bildirim (dakika)',
   "Only sent on days you have a routine planned and haven't logged a workout yet.": 'Sadece rutin planlanmış ve henüz antrenman kaydedilmemiş günlerde gönderilir.',
   'Timezone: {0} (auto-detected, updates if you travel).': 'Saat dilimi: {0} (otomatik algılanır, seyahatte güncellenir).',
   'Send test notification': 'Test bildirimi gönder',

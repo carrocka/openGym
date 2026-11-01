@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': '休息计时提醒，即使 openGym 已关闭。',
   'Workout day reminder': '训练日提醒',
   'Reminder time': '提醒时间',
+  'Early notice (minutes)': '提前通知（分钟）',
   "Only sent on days you have a routine planned and haven't logged a workout yet.": '仅在安排了训练且尚未记录的日子发送。',
   'Timezone: {0} (auto-detected, updates if you travel).': '时区：{0}（自动检测，旅行时自动更新）。',
   'Send test notification': '发送测试通知',

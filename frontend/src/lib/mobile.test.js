@@ -23,6 +23,22 @@ describe('buildReminderNotifications', () => {
     expect(notifications[0].schedule.allowWhileIdle).toBe(true)
   })
 
+  it('fires the early notice lead minutes before the session time', () => {
+    const now = new Date(2026, 5, 1, 4, 0) // Monday, well before 05:30
+    const [first] = buildReminderNotifications(state({ week: { 1: 'push' }, reminder: { on: true, time: '05:30', lead: 5 } }), now)
+    expect(first.schedule.at.getHours()).toBe(5)
+    expect(first.schedule.at.getMinutes()).toBe(25)
+  })
+
+  it('skips today when the early notice already passed, and keeps lead 0 as before', () => {
+    const now = new Date(2026, 5, 1, 5, 27) // Monday, 3 minutes after the 05:25 notice
+    const today = iso(now)
+    const withLead = buildReminderNotifications(state({ week: { 1: 'push' }, reminder: { on: true, time: '05:30', lead: 5 } }), now)
+    expect(withLead.some(n => iso(n.schedule.at) === today)).toBe(false)
+    const noLead = buildReminderNotifications(state({ week: { 1: 'push' }, reminder: { on: true, time: '05:30', lead: 0 } }), now)
+    expect(noLead[0].schedule.at.getMinutes()).toBe(30)
+  })
+
   it('uses rest today and a routine override tomorrow when rescheduling', () => {
     const now = new Date(2026, 5, 1, 7, 0) // Monday
     const today = iso(now), tomorrow = iso(new Date(2026, 5, 2))

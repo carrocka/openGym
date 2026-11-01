@@ -1277,6 +1277,13 @@ function MobileReminderCard({ S, update, toast }) {
             onChange={e => setReminder({ time: e.target.value })} />
         </Row>
       )}
+      {S.reminder?.on && (
+        <Row icon="bell" iconTint="var(--purple)" title={t('Early notice (minutes)')}>
+          <input type="number" className="timef" min="0" max="60" step="1" inputMode="numeric"
+            value={S.reminder?.lead ?? DEF.reminder.lead}
+            onChange={e => setReminder({ lead: Math.min(60, Math.max(0, Math.round(Number(e.target.value)) || 0)) })} />
+        </Row>
+      )}
       {S.reminder?.on && <NudgeRows S={S} setReminder={setReminder} />}
     </Section>
   )

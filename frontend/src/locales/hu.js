@@ -475,6 +475,7 @@ export default {
   'Rest-timer alerts, even if openGym is closed.': 'Pihenő időzítő riasztások, még ha az openGym be is van zárva.',
   'Workout day reminder': 'Edzésnap-emlékeztető',
   'Reminder time': 'Emlékeztető ideje',
+  'Early notice (minutes)': 'Korai értesítés (perc)',
   'Only sent on days you have a routine planned and haven\'t logged a workout yet.': 'Csak azokon a napokon küldjük, amikor van tervezett rutinod, és még nem rögzítettél edzést.',
   'Timezone: {0} (auto-detected, updates if you travel).': 'Időzóna: {0} (automatikusan felismerve, utazáskor frissül).',
   'Send test notification': 'Teszt értesítés küldése',

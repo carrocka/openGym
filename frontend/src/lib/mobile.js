@@ -163,6 +163,8 @@ export function buildReminderNotifications(S, now = new Date()) {
   const state = { ...S, routines, week: S.week || {}, dayPlan: S.dayPlan || {} }
   const [hour, minute] = (r.time || '08:00').split(':').map(Number)
   if (!Number.isInteger(hour) || !Number.isInteger(minute)) return []
+  // The early notice: fires `lead` minutes before the time (the session start). 0 keeps the old behaviour.
+  const lead = Math.min(60, Math.max(0, Math.round(Number(r.lead)) || 0))
   const date = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12)
   const notifications = []
   for (let offset = 0; offset < REMINDER_WINDOW_DAYS; offset++) {
@@ -179,6 +181,7 @@ export function buildReminderNotifications(S, now = new Date()) {
     const label = dayRoutines.length <= 2 ? dayRoutines.map(r => r.name).join(' + ') : tn('{0} routine', '{0} routines', dayRoutines.length)
     const at = new Date(day)
     at.setHours(hour, minute, 0, 0)
+    at.setMinutes(at.getMinutes() - lead)
     if (at <= now) continue
     notifications.push({
       id: REMINDER_ID_BASE + offset,
