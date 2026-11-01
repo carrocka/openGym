@@ -157,9 +157,8 @@ public class AnimationPacksPlugin: CAPPlugin, CAPBridgedPlugin {
             Task {
                 let manager = AssetPackManager.shared
                 out["readable"] = AnimationPacksPlugin.readable(id, probe)
-                if #available(iOS 26.4, *) {
-                    out["status"] = AnimationPacksPlugin.describe(await manager.localStatus(ofAssetPackWithID: id))
-                }
+                // localStatus(ofAssetPackWithID:) only exists in the iOS 26.4 SDK; the build Mac
+                // has 26.2, so the status row of this diagnostics call is left out.
                 do {
                     let data = try manager.contents(at: FilePath("\(id)/\(probe).webp"), searchingInAssetPackWithID: id, options: .mappedIfSafe)
                     out["probeBytes"] = data.count
